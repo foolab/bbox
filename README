@@ -1,0 +1,247 @@
+I have been using a Node 804 for my TrueNAS server for years but I needed a new case. The 804 is great but I needed something smaller that could be shoved in an IKEA Besta cabinet.
+In addition to the drive trays making me nervous as I do not want to carry 4 drives just to replace one.
+
+I actually bought a 3D printer and started learning CAD just for that. It's my first serious design.
+
+Requirements:
+ * Shallow as I neither have a rack nor the space for one.
+ * Can be printed via my Qidi Q1 Pro
+ * Can fit 6-8 drives
+ * Can fit my HBA and an optional GPU
+ * Can fit my mATX motherboard and ATX PSU
+ * Easy access for hard drives
+ * My motherboard has only 3 PCIE slots. Drives are positioned so the 8th drive would be before my 1st slot.
+ * No glue and no threaded inserts.
+
+Dimensions: 430mm width, 375mm depth, 176.5mm height
+
+BOM:
+3 rolls of filament. Mine is around 1.8KG without any of the front drive holders.
+53 x M2 10mm counterbore screws
+53 x M2 hex nuts
+53 x M3 10mm countersink screws
+53 x M3 hex nuts
+24 6x3 circular magnets
+M3 motherboard standoffs + M3 nuts (Read below).
+16mm PC power switch
+
+For each fan hinge:
+2 x M3 screws and 2 M3 nuts (to attach hinge 2 parts together).
+4 x M3 screws and 4 M3 nuts (to attach each hinge to 4 hdd holders).
+4 magnets
+4 x M3 screws and 4 M3 nuts (to attach to the hdd holder).
+2 x M2.5 22mm counterbore screws and 2 x 2.5M nuts
+2 x 30mm screws and corresponding nuts.
+
+For each HDD holder:
+2 x M2.5 18mm counterbore screws and 2 x 2.5M nuts for attaching the connector
+1 x SFF-8482 SAS Female to SATA Male 90 degrees connector https://www.aliexpress.com/item/1005008077051668.html?spm=a2g0o.order_list.order_list_main.75.d85f18023sqB9C
+
+For each SSD holder:
+up to 3 x SFF-8482 SAS to SATA 3.0 Adapter (SATA Male to Female) `https://www.aliexpress.com/item/1005005773620960.html?spm=a2g0o.order_list.order_list_main.124.d85f18023sqB9C
+2 x M2.5 30mm counterbore screws and 2 x 2.5M nuts for the connectors.
+3 x M2.5 18mm counterbore screws and 3 x 2.5M nuts, 1 x M2 10mm counterbore screws and 1 x M2 nut for connecting all the body pieces (Shorter screws will do).
+
+For each side SSD holder:
+2 x M2.5 18mm counterbore screws and 2 x 2.5M nuts for attaching the connector AND THE STRUCTURE TO LEFT WALL.
+1 x SFF-8482 SAS to SATA 3.0 Adapter (SATA Male to Female) `https://www.aliexpress.com/item/1005005773620960.html?spm=a2g0o.order_list.order_list_main.124.d85f18023sqB9C
+
+M2.5 counterbore screws, washers and nuts for attaching studs, HDD and SSD holders to the case (Amount depends on the number of drives used. read below).
+
+Printing:
+I used a Qidi Q1 Pro for printing. My nozzle is 0.4 and the layer height is 0.2.
+I am using Orca slicer
+I had to use a glue stick otherwise prints won't release (mesh would break instead of release).
+I did not want to print with support thus some parts got split insanely (The intact versions are there).
+Please make sure your printer is as accurate as possible. There is not much wiggle room.
+I used a mix of black and white Elegoo rapid PETG and Sunlu white PETG.
+The case seems to be a bit wider at the front. Probably due to warping but the front top should bring it together nicely.
+
+Assembly:
+Instructions assume the case is oriented so that front wall is towards us.
+
+- Bottom:
+ - I planned pockets for screw heads but it was easier to use them for the nuts.
+ - Bolt middle left and middle right with 4 x M2 screws and 4 x M2 nuts
+ - Bolt rear left and rear right with 5 x M2 screws and 5 x M2 nuts
+ - Bolt rear and middle with 12 x M2 screws and 12 x M2 nuts
+ - Install the 6 magnets in the corresponding pockets in middle part
+
+- Rear wall
+ - Bolt rear PSU to the bottom using 3 x M2 screws and 3 x M2 nuts
+ - Bolt rear middle to the bottom using 3 x M2 screws and 3 x M2 nuts. There are 5 holes but only 3 are usable. I might fix that in a future iteration depending on how stable the structure is.
+ - Bolt rear PCI to the bottom using 4 x M2 screws and 4 x M2 nuts
+
+- Right wall
+ - Bolt rear part to the bottom using 4 x M2 screws and 4 x M2 nuts
+ - Bolt front part to the bottom using 4 x M2 screws and 4 x M2 nuts
+ - Attach the power button holder with 2 x M3 screws and 2 x M3 nuts
+
+- Left wall
+ - Bolt rear part to the bottom using 4 x M2 screws and 4 x M2 nuts
+ - Bolt front part to the bottom using 4 x M2 screws and 4 x M2 nuts
+
+- Front wall
+ - 4 parts bolted together
+ - The mesh part with the circular hole goes to the right
+ - The mesh part with the large bezel goes to the left
+ - The small mesh part is in the middle
+ - Attach bottom front
+  - Install 6 magnets into the pockets.
+  - Bolt it using 6 x M2 screws and 6 x M2 nuts
+  - Orient it so that magnets are towards the front wall and the thick part is towards the bottom.
+
+- Bolt left wall to PCIE cutouts part using 3 x M3 screws and nuts
+- Bolt PCIE cutouts part to middle part using 4 x M3 screws and nuts
+- Bolt middle part to PSU part using 4 x M3 screws and nuts
+- Bolt PCIE top part to middle part using 4 x M3 screws and nuts
+- Corner support between rear wall and right/left walls:
+ - The thin part with the hole is oriented upwards.
+ - Use 6x3mm circular magnet for each
+ - Use 2 x M3 screws and 2 x M3 nuts for each
+- Side supports:
+ - 2 side supports
+ - Each takes 2 magnets
+ - Each needs 8 x M3 screws and 8 x M3 nuts
+
+- Top
+ - Front parts will press fit together.
+  - It is not easy as it is a very tight fit.
+  - I had to use a hammer and broke a few teeth but it worked at the end.
+  - 2 Magnets for the front part. Use 2 x M3 screws and 2 x M3 nuts for each.
+ - Rear parts can be screwed using 4 x M3 screws and 4 x M3 nuts.
+  - 4 Magnets for the rear part. Use 2 x M3 screws and 2 x M3 nuts for each.
+
+- Motherboard standoffs
+ - The case supports both ATX and mATX motherboards. You can still use mini ITX if you want.
+ - ATX-only locations are labeled "A"
+ - mATX-only locations are labeled "M"
+ - NOTE: Not all motherboards will have holes for all standoffs. Please check before screwing your notherboard
+ - Standoffs:
+  - My standoffs have 6mm threads and are 6mm in height. They however are too short. The motherboard will not even reach the IO cutout.
+  - I had to stack standoffs to raise the motherboard. If someone has 9-10mm long standoffs then please comment if they work.
+  - I could redesign the motherboard cutout part to accommodate the shorter standoffs but it might have issues with PCIE cards and I already wasted 2 filament rolls. Maybe I will investigate in a future update.
+
+- PCIE covers
+ - Print as much as you need.
+ - They just snap into place from the outside.
+
+- SSD side holder:
+ - Attach to the left wall using 2 x M2.5 screws and 2 x 2.5M nuts.
+ - The thick holder wall is towards the side wall.
+ - Make sure the connector is oriented correctly otherwise the SSD will not fit.
+
+- SSD holder:
+ - It will easily come together using the M2.5 screws.
+ - Join the body pieces together with the M2 and M2.5 screws and nuts.
+
+- HDD holder:
+ - Attach the connector using 2 x M2.5 screws and 2 x 2.5M nuts.
+
+- HDD fan hinge:
+ - I changed the design to remove the rear screw holes and forgot to take new pics before screwing in the fans
+ - Use 2 x M3 screws and 2 M3 nuts to attach both parts of hinge 2.
+ - Install the magnets
+ - Connect both hinge parts using 2 x M2.5 22mm counterbore screws and 2 x 2.5M nuts
+ - Each fan hinge attaches to 4 hdd holders using 4 x M3 screws and 4 M3 nuts
+ - I recommend attaching the hinge to the holders after they are installed and afterwards attach the fan.
+
+- Drive studs and holders:
+ - I used a 1mm thick rubber strip hoping it will help with HDD vibrations. No idea if it does.
+ - Make sure to attach all SATA data and power cables before screwing in the holders.
+ - The space is very tight. I used SilverStone SST-CP06-E4 cables. They are short and flexible.
+ - The case can host up to 12 holders.
+ - The large stud is at the front. The small stud is towards the back.
+ - Make sure the large stud is oriented correctly: There are tiny pockets that go above the magnets pockets
+ - Screw in studs first. For each position:
+  - If it will be empty, use 3 x M2.5 14mm screws
+  - If it will host an SSD holder, use 1 x M2.5 14mm screw for the furthest hole in the large stud.
+  - If it will host an HDD holder, use 1 x M2.5 14mm screw for the small stud.
+ - Holders screw on top of the already screwed studs.
+ - For the holders:
+  - HDD: Use 2 x M2.5 25mm screws, a washer and 2 nuts.
+  - SSD: Use 2 x M2.5 16mm screws and 2 nuts.             
+
+-Fans:
+ - Use the 30mm screws.
+ - I used M2.5 with a washer to prevent the screw head from going through the hole :D
+
+- Attach the power button to its holder.
+
+Github: FreeCAD files available from https://github.com/foolab/bbox
+
+Buy me a coffee: https://ko-fi.com/msameer
+
+BBox? It can be Bit(s) Box, Bytes Box, Bolts Box or simply Broken Box ;-)
+
+
+bottom (I think I mixed up front right and left):
+  rear left: 5 top layers, 5 bottom layers, 4 walls, 15% grid infill, no brim, layer height: 0.2
+  rear right: 5 top layers, 5 bottom layers, 4 walls, 15% grid infill, no brim, layer height: 0.2
+  middle left: 5 top layers, 5 bottom layers, 4 walls, 15% grid infill, no brim, layer height: 0.2
+  middle right: 5 top layers, 5 bottom layers, 4 walls, 15% grid infill, no brim, layer height: 0.2
+  front: 5 top layers, 5 bottom layers, 4 walls, 15% grid infill, no brim, layer height: 0.2
+
+front wall:
+ settings: 5 top layers, 5 bottom layers, 4 walls, 15% gyroid infill, no brim, layer height: 0.2
+ Add part: cube
+ cube part: 0 top walls and 0 bottom walls
+  left:
+    cube part position: x: 14.88, y: 5.5, z: 0
+    cube part size: x: 120, y: 158.5, z: 3
+  middle:
+    cube part position: x: 0, y: 5.5, z: 0
+    cube part size: x: 120, y: 158.5, z: 3
+  right:
+    cube part position: x: -14.17, y: 5.5, z: 0
+    cube part size: x: 120, y: 158.5, z: 3
+
+left wall:
+  front: 5 top layers, 5 bottom layers, 4 walls, 15% grid infill, no brim, layer height: 0.2
+  rear:
+    settings: 5 top layers, 5 bottom layers, 4 walls, 15% gyroid infill, no brim, layer height: 0.2
+    Add part: disc
+    disc part: 0 top walls and 0 bottom walls
+    disc part position: x: -8.54, y: 9.75, z: 0
+    disc part size: x: 118, y: 118, z: 4
+
+right wall:
+  front: 5 top layers, 5 bottom layers, 4 walls, 15% grid infill, no brim, layer height: 0.2
+  rear:
+    settings: 5 top layers, 5 bottom layers, 4 walls, 15% gyroid infill, no brim, layer height: 0.2
+    Add part: cube
+    cube part: 0 top walls and 0 bottom walls
+    cube part position: x: 8.54, y: -3.25, z: 0
+    cube part size: x: 130, y: 146, z: 4
+
+drive cage studs: 4 wall loops, 5 top layers, 5 bottom layers, 40% grid infill, no brim
+
+rear:
+  middle: 5 top layers, 5 bottom layers, 4 walls, 15% grid infill, no brim, layer height: 0.2
+  psu: 5 top layers, 5 bottom layers, 4 walls, 15% grid infill, no brim, layer height: 0.2
+  pcie combined: 5 top layers, 5 bottom layers, 4 walls, 15% grid infill, no brim, layer height: 0.2
+
+top:
+	rear left: 4 top layers, 4 bottom layers, 2 walls, 15% grid infill, no brim, layer height: 0.2
+	rear right: 4 top layers, 4 bottom layers, 2 walls, 15% grid infill, no brim, layer height: 0.2
+	front left: 4 top layers, 4 bottom layers, 2 walls, 15% grid infill, no brim, layer height: 0.2
+	front right: 4 top layers, 4 bottom layers, 2 walls, 15% grid infill, no brim, layer height: 0.2
+
+pcie slot cover: 2 top layers, 2 bottom layers, 2 walls, 10% grid infill, no brim, layer height: 0.2
+
+supports and magnets: 5 top layers, 5 bottom layers, 4 walls, 15% grid infill, no brim, layer height: 0.2
+ssd side holder: 5 top layers, 5 bottom layers, 4 walls, 15% grid infill, no brim, layer height: 0.2
+ssd holder: 5 top layers, 5 bottom layers, 4 walls, 15% grid infill, no brim, layer height: 0.2
+hdd fan hinge 1: 4 top layers, 4 bottom layers, 2 walls, 15% grid infill, no brim, layer height: 0.2
+hdd fan hinge 2: 4 top layers, 4 bottom layers, 2 walls, 15% grid infill, no brim, layer height: 0.2
+hdd holder: 5 top layers, 5 bottom layers, 4 walls, 15% grid infill, no brim, layer height: 0.2
+
+
+TODO:
+rear middle has 5 screw holes but bottom has 4 pockets only.
+rear middle 1 screw has no place for the bolt. too tight.
+motherboard standoff heights
+I don't like top front.
+front wall is flimsy.
+hinges are too flimsy. I don't like it :/
+bottom opening to pass fan cable.

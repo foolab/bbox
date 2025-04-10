@@ -10,18 +10,18 @@ Requirements:
  * Can fit my HBA and an optional GPU
  * Can fit my mATX motherboard and ATX PSU
  * Easy access for hard drives
- * My motherboard has only 3 PCIE slots. Drives are positioned so the 8th drive would be before my 1st slot.
+ * Drives are positioned so that the first 8 drives will clear out the PCIE zone.
  * No glue and no threaded inserts.
 
 Dimensions: 430mm width, 375mm depth, 176.5mm height
 
 BOM:
 3 rolls of filament. Mine is around 1.8KG without any of the front drive holders.
-53 x M2 10mm counterbore screws
-53 x M2 hex nuts
-53 x M3 10mm countersink screws
-53 x M3 hex nuts
-24 6x3 circular magnets
+86 x M2 10mm counterbore screws
+86 x M2 hex nuts
+51 x M3 10mm countersink screws
+51 x M3 hex nuts
+28 6x3 circular magnets
 M3 motherboard standoffs + M3 nuts (Read below).
 16mm PC power switch
 
@@ -62,7 +62,7 @@ Instructions assume the case is oriented so that front wall is towards us.
 
 - Bottom:
  - I planned pockets for screw heads but it was easier to use them for the nuts.
- - Bolt middle left and middle right with 4 x M2 screws and 4 x M2 nuts
+ - Bolt middle left and middle right with 3 x M2 screws and 3 x M2 nuts
  - Bolt rear left and rear right with 5 x M2 screws and 5 x M2 nuts
  - Bolt rear and middle with 12 x M2 screws and 12 x M2 nuts
  - Install the 6 magnets in the corresponding pockets in middle part
@@ -75,21 +75,22 @@ Instructions assume the case is oriented so that front wall is towards us.
 - Right wall
  - Bolt rear part to the bottom using 4 x M2 screws and 4 x M2 nuts
  - Bolt front part to the bottom using 4 x M2 screws and 4 x M2 nuts
- - Attach the power button holder with 2 x M3 screws and 2 x M3 nuts
 
 - Left wall
  - Bolt rear part to the bottom using 4 x M2 screws and 4 x M2 nuts
  - Bolt front part to the bottom using 4 x M2 screws and 4 x M2 nuts
+ - Bolt front left support to the left wall using 3 x M2 screws and 3 x M2 nuts
 
 - Front wall
- - 4 parts bolted together
- - The mesh part with the circular hole goes to the right
- - The mesh part with the large bezel goes to the left
- - The small mesh part is in the middle
+ - The power button holder:
+  - attached to the left wall using 3 x M2 screws and 3 x M2 nuts.
+  - attached to the bottom using 1 x M2 screws and 1 x M2 nuts.
+ - mesh parts and bottom front bolted together
  - Attach bottom front
   - Install 6 magnets into the pockets.
   - Bolt it using 6 x M2 screws and 6 x M2 nuts
   - Orient it so that magnets are towards the front wall and the thick part is towards the bottom.
+ - 2 front supports. Each takes a magnet and 6 x M2 screws and 6 x M2 nuts.
 
 - Bolt left wall to PCIE cutouts part using 3 x M3 screws and nuts
 - Bolt PCIE cutouts part to middle part using 4 x M3 screws and nuts
@@ -99,17 +100,18 @@ Instructions assume the case is oriented so that front wall is towards us.
  - The thin part with the hole is oriented upwards.
  - Use 6x3mm circular magnet for each
  - Use 2 x M3 screws and 2 x M3 nuts for each
+
 - Side supports:
  - 2 side supports
  - Each takes 2 magnets
  - Each needs 8 x M3 screws and 8 x M3 nuts
 
 - Top
- - Front parts will press fit together.
-  - It is not easy as it is a very tight fit.
-  - I had to use a hammer and broke a few teeth but it worked at the end.
-  - 2 Magnets for the front part. Use 2 x M3 screws and 2 x M3 nuts for each.
- - Rear parts can be screwed using 4 x M3 screws and 4 x M3 nuts.
+ - Front parts to be connected using front top support.
+  - Each top support needs 6 x M2 screws and 6 x M2 nuts.
+  - Each top support needs a magnet. Make sure the orientation is correct w.r.t front support magnets.
+  - 2 Magnets for front rear. Use 2 x M3 screws and 2 x M3 nuts for each.
+ - Rear parts to be screwed using 4 x M3 screws and 4 x M3 nuts.
   - 4 Magnets for the rear part. Use 2 x M3 screws and 2 x M3 nuts for each.
 
 - Motherboard standoffs
@@ -162,7 +164,11 @@ Instructions assume the case is oriented so that front wall is towards us.
   - HDD: Use 2 x M2.5 25mm screws, a washer and 2 nuts.
   - SSD: Use 2 x M2.5 16mm screws and 2 nuts.             
 
--Fans:
+- Bottom plates:
+ - Attach using 3 x M2 screws and 3 x M2 nuts (Even 2 will do).
+ - There are holes for 4 screws but the 4th is inaccessible.
+
+- Fans:
  - Use the 30mm screws.
  - I used M2.5 with a washer to prevent the screw head from going through the hole :D
 
@@ -181,20 +187,22 @@ bottom (I think I mixed up front right and left):
   middle left: 5 top layers, 5 bottom layers, 4 walls, 15% grid infill, no brim, layer height: 0.2
   middle right: 5 top layers, 5 bottom layers, 4 walls, 15% grid infill, no brim, layer height: 0.2
   front: 5 top layers, 5 bottom layers, 4 walls, 15% grid infill, no brim, layer height: 0.2
+  plates: 4 top layers, 4 bottom layers, 2 walls, 15% grid infill, no brim, layer height: 0.2
 
 front wall:
  settings: 5 top layers, 5 bottom layers, 4 walls, 15% gyroid infill, no brim, layer height: 0.2
- Add part: cube
- cube part: 0 top walls and 0 bottom walls
-  left:
-    cube part position: x: 14.88, y: 5.5, z: 0
-    cube part size: x: 120, y: 158.5, z: 3
-  middle:
-    cube part position: x: 0, y: 5.5, z: 0
-    cube part size: x: 120, y: 158.5, z: 3
-  right:
-    cube part position: x: -14.17, y: 5.5, z: 0
-    cube part size: x: 120, y: 158.5, z: 3
+ mesh parts:
+   Add part: cube
+   cube part: 0 top layers and 0 bottom layers
+    left:
+      cube part position: x: -1.23, y: 5.5, z: 0
+      cube part size: x: 120, y: 158.5, z: 3
+    middle:
+      cube part position: x: 0.4, y: 5.5, z: 0
+      cube part size: x: 120, y: 158.5, z: 3
+    right:
+      cube part position: x: 0.82, y: 5.5, z: 0
+      cube part size: x: 120, y: 158.5, z: 3
 
 left wall:
   front: 5 top layers, 5 bottom layers, 4 walls, 15% grid infill, no brim, layer height: 0.2
@@ -225,6 +233,7 @@ top:
 	rear left: 4 top layers, 4 bottom layers, 2 walls, 15% grid infill, no brim, layer height: 0.2
 	rear right: 4 top layers, 4 bottom layers, 2 walls, 15% grid infill, no brim, layer height: 0.2
 	front left: 4 top layers, 4 bottom layers, 2 walls, 15% grid infill, no brim, layer height: 0.2
+	front middle: 4 top layers, 4 bottom layers, 2 walls, 15% grid infill, no brim, layer height: 0.2
 	front right: 4 top layers, 4 bottom layers, 2 walls, 15% grid infill, no brim, layer height: 0.2
 
 pcie slot cover: 2 top layers, 2 bottom layers, 2 walls, 10% grid infill, no brim, layer height: 0.2
@@ -240,8 +249,10 @@ hdd holder: 5 top layers, 5 bottom layers, 4 walls, 15% grid infill, no brim, la
 TODO:
 rear middle has 5 screw holes but bottom has 4 pockets only.
 rear middle 1 screw has no place for the bolt. too tight.
+bottom plates, 1 screw is inaccessible and screws are too difficult
 motherboard standoff heights
+bottom is too difficult to assemble
 I don't like top front.
 front wall is flimsy.
 hinges are too flimsy. I don't like it :/
-bottom opening to pass fan cable.
+hinge bottom opening to pass fan cable.
